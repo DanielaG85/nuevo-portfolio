@@ -11,7 +11,6 @@ html{
 
 
 /*HEADER*/
-
 nav.barra-nav {
     width: 100%;
     height: 56px;
@@ -125,13 +124,52 @@ section:not(.presentacion){
 /*Section contacto*/
 .contacto{
     border: 1px solid;
-}    
-
-.contacto-form input{
+}  
+#nombre,#email,#telefono{
     display: block;
     width: 50%;
     margin-bottom: 10px;
     padding: 5px;
+    background-color: #9656A1;
+    font-size: 16px;
+}
+#nombre::placeholder,
+#email::placeholder,
+#telefono::placeholder {
+    color: white;
+}
+#date{
+    display: block;
+    background-color: #9656A1;
+    color: white;
+    height: 25px;
+    font-size: 16px;
+}
+#archivo{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;  
+}
+.boton-archivo {
+    display: block;
+    width: 100px;
+    background-color: #9656A1;
+    color: white;
+    margin-top: 10px;
+    padding: 10px; 
+    border: none;
+    font-size: 16px;
+    cursor: pointer; 
+    text-align: center; 
+}
+
+#terminos{
+    display: block;
+    padding: auto;
+    margin: 20px auto;
 }
 
 label[for="terminos"] {
@@ -142,16 +180,45 @@ label[for="terminos"] {
 }
 
 input[type="checkbox"] {
-    margin: 0;
-    width: 16px;
-    height: 16px;
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;     
+    border-radius: 4px; 
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    background-color: #9656A1;
+    border-color: #9656A1;
+    color: white;
+    position: relative;
+}
+input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 4px;
 }
 
-
-#enviar{
-    background-color: white;
-    margin-top: 20px;
+#enviar {
+    display: block;
+    width: 100px;
+    background-color: #9656A1;
+    color: white;
+    margin-top: 10px;
+    padding: 10px; 
+    border: none;
+    font-size: 16px;
+    cursor: pointer; 
+    text-align: center; 
 }
+
+#enviar:hover {
+    background-color: #803d8a;
+}
+
 
 /*Section footer*/
 .footer {
@@ -169,7 +236,7 @@ input[type="checkbox"] {
 }
 
 .enlace-link:hover {
-    background-color: white;
+    background-color: #9656A1;
     border-radius: 50%;
 }
 .typed-cursor{
