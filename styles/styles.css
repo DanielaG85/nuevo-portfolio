@@ -1,8 +1,10 @@
 *{
-    color:white;
+    
     font-family: "Chakra Petch", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 html{
@@ -67,16 +69,17 @@ main{
 }
 
 .titulo{
+    color:white;
     width: 70%;
     font-size: 70px;
     font-weight: 700;
-    color: #9656A1;
     text-align: left;
     padding: 60px;
     
 }
 
 #typed{
+    color: #9656A1;
     font-size: 90px;
 }
 section:not(.presentacion){
@@ -91,34 +94,47 @@ section:not(.presentacion){
     background-color: rgba(194, 176, 201, 0.4); 
     margin-top: 300px;
     padding: 16px 24px;
+    color: white;
 }
 
 /*section formacion-academica*/
 .formacion-academica{
     text-align: left;
+    color: white;
 }
 
 .lista-formaciones{
-    color: blue;
+    color: magenta !important;
+    margin-left: 10px;
 }
 
+/*Section experiencia-laboral*/
+.experiencia-laboral{
+    color: white;
+}
 .tabla{    
     border-collapse: separate;
     width: 100%;
     table-layout: auto;
     border-spacing: 5px;
+    color: white;
 }
 
 .tabla-th{
     text-align: left !important;
+
 }
 .tabla th, .tabla td {
     border: 1px solid #9656A1;
     padding: 10px 4px; 
     text-align: left;
+    color: white;
 }
 
 /*section intereses*/
+.intereses{
+    color: white;
+}
 .flex-grid{
     display: flex;
     gap: 10px;
@@ -134,6 +150,7 @@ section:not(.presentacion){
 /*Section contacto*/
 .contacto{
     border: 1px solid;
+    color: white;
 }  
 #nombre,#email,#telefono{
     display: block;
